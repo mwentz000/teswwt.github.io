@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input Page</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Chat Bot</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Input Page</h1>
-        <form>
-            <label for="inputBox">Type something here:</label>
-            <input type="text" id="inputBox" name="inputBox">
-        </form>
+    <div class="chat-container">
+        <div class="chat-box" id="chatBox">
+            <!-- Chat messages will be added here dynamically -->
+            <p>Hello, how can I help you today?</p>
+            <!-- Example of a user message -->
+            <div class="user-message">
+                <p>Hi, I have a question.</p>
+            </div>
+            <!-- More messages will go here -->
+        </div>
+        <input type="text" id="inputBox" placeholder="Type your message here...">
+        <!-- You would typically have a button here to send the message -->
+        <button id="sendBtn">Send</button>
     </div>
+
+    <!-- Here you would include your JavaScript file that handles the chat -->
+    <!-- <script src="chat.js"></script> -->
 </body>
 </html>
